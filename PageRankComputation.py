@@ -1,6 +1,6 @@
-def pagerank(G, alpha=0.85, personalization=None, 
-             max_iter=100, tol=1.0e-6, nstart=None, weight='weight', 
-             dangling=None): 
+def pagerank(G, alpha = 0.85, personalization = None, 
+             max_iter = 100, tol = 1.0e-6, nstart = None, weight = 'weight', 
+             dangling = None): 
     
     """Return the PageRank of the nodes in the graph. """
   
@@ -74,29 +74,12 @@ def pagerank(G, alpha=0.85, personalization=None,
     
 import networkx as nx 
 import matplotlib.pyplot as plt 
-G=nx.barabasi_albert_graph(40,35)
+G = nx.barabasi_albert_graph(40,35)
 '''
 Return random graph using Barabási-Albert preferential attachment model.
-A graph of n nodes is grown by attaching new nodes each with m edges that are preferentially attached to existing nodes with high degree.
-
-Parameters:	
-n : int
-Number of nodes
-
-m : int
-Number of edges to attach from a new node to existing nodes
-
-seed : int, optional
-Seed for random number generator (default=None).
-
-Returns:	
-G : Graph
-
-Notes
-The initialization is a graph with with m nodes and no edges.
 ''' 
-pr=pagerank(G,0.4) 
+pr = pagerank(G,0.4) 
 print(pr)
 
-nx.draw(G, with_labels=True) 
+nx.draw(G, with_labels = True) 
 plt.show()
