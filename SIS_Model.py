@@ -23,12 +23,12 @@ infection(S, I, N)
 figure = plt.figure()
 figure.canvas.set_window_title('SIS model')
 
-inf_line, =plt.plot(inf, label='I(t)')
+inf_line, = plt.plot(inf, label = 'I(t)')
 
-sus_line, = plt.plot(sus, label='S(t)')
-plt.legend(handles=[inf_line, sus_line])
+sus_line, = plt.plot(sus, label = 'S(t)')
+plt.legend(handles = [inf_line, sus_line])
 
-plt.ticklabel_format(style='sci', axis='y', scilimits=(0,0))
+plt.ticklabel_format(style = 'sci', axis = 'y', scilimits = (0,0))
 
 plt.xlabel('T')
 plt.ylabel('N')
