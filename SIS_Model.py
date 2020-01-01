@@ -1,5 +1,3 @@
-
-
 import matplotlib.pylab as plt
 
 N = 1000
